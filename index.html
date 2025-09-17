@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaunchLayer Finance - Personal Finance Made Simple</title>
+    <meta name="description" content="Modern personal finance tips, SIP guidance, investing strategies, and financial education playbooks to help you build wealth.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>LaunchLayer Finance</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#posts" class="nav-link">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><button class="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Master Your Money, Build Your Future</h1>
+                <p class="hero-subtitle">Professional personal finance guidance for SIPs, investments, and wealth building. Start your financial journey with expert insights.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="openModal()">Get Financial Playbook</button>
+                    <a href="#services" class="btn btn-secondary">Our Services</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="hero-finance.png" alt="Personal Finance Dashboard" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2 class="section-title">About LaunchLayer Finance</h2>
+                <p class="about-text">We simplify personal finance through practical guidance on SIPs, smart investing, and wealth building strategies. Our mission is to make financial literacy accessible to everyone.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3>500+</h3>
+                        <p>Clients Helped</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>₹50Cr+</h3>
+                        <p>Assets Managed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>95%</h3>
+                        <p>Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="services-container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">💰</div>
+                    <h3>SIP Planning</h3>
+                    <p>Systematic Investment Plan guidance tailored to your financial goals and risk appetite.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Investment Strategy</h3>
+                    <p>Personalized investment strategies for mutual funds, stocks, and other financial instruments.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>Financial Planning</h3>
+                    <p>Comprehensive financial planning including retirement, tax saving, and wealth creation.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📚</div>
+                    <h3>Education & Training</h3>
+                    <p>Financial literacy workshops and training programs to enhance your money management skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Posts Section -->
+    <section id="posts" class="posts">
+        <div class="posts-container">
+            <h2 class="section-title">Latest Financial Insights</h2>
+            <div class="posts-grid">
+                <article class="post-card">
+                    <div class="post-image">
+                        <img src="sip-card.png" alt="SIP Investment Guide">
+                    </div>
+                    <div class="post-content">
+                        <h3>Ultimate Guide to SIP Investments</h3>
+                        <p>Everything you need to know about starting your SIP journey and maximizing returns through disciplined investing.</p>
+                        <a href="#" class="post-link">Read More →</a>
+                    </div>
+                </article>
+                <article class="post-card">
+                    <div class="post-image">
+                        <img src="dividend-post.png" alt="Dividend Investing Strategy">
+                    </div>
+                    <div class="post-content">
+                        <h3>Dividend Investing for Passive Income</h3>
+                        <p>Build a sustainable passive income stream through strategic dividend investing and portfolio management.</p>
+                        <a href="#" class="post-link">Read More →</a>
+                    </div>
+                </article>
+                <article class="post-card">
+                    <div class="post-image">
+                        <img src="transmission-post.png" alt="Wealth Transfer Planning">
+                    </div>
+                    <div class="post-content">
+                        <h3>Wealth Transfer & Estate Planning</h3>
+                        <p>Secure your family's financial future with proper estate planning and wealth transfer strategies.</p>
+                        <a href="#" class="post-link">Read More →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2 class="section-title">Get Started Today</h2>
+            <p class="contact-subtitle">Ready to take control of your financial future? Let's discuss your goals.</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@launchlayer.finance</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
+                        <div>
+                            <h4>Available</h4>
+                            <p>Mon-Fri, 9 AM - 6 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="service" name="service" required>
+                            <option value="">Select Service Interest</option>
+                            <option value="sip">SIP Planning</option>
+                            <option value="investment">Investment Strategy</option>
+                            <option value="planning">Financial Planning</option>
+                            <option value="education">Education & Training</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Tell us about your financial goals" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LaunchLayer Finance</h3>
+                    <p>Making personal finance simple and accessible for everyone.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">SIP Planning</a></li>
+                        <li><a href="#">Investment Strategy</a></li>
+                        <li><a href="#">Financial Planning</a></li>
+                        <li><a href="#">Education & Training</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Calculators</a></li>
+                        <li><a href="#">Guides</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>hello@launchlayer.finance</li>
+                        <li>+91 98765 43210</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LaunchLayer Finance. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Financial Playbook -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Get Your Free Financial Playbook</h2>
+            <p>Download our comprehensive guide to personal finance, SIP investing, and wealth building strategies.</p>
+            <form class="modal-form" id="playbookForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <button type="submit" class="btn btn-primary">Download Playbook</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
