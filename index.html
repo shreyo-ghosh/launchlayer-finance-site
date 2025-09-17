@@ -7,13 +7,39 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>LaunchLayer Finance</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#expertise">Services</a></li>
+                <li><a href="#playbooks">Playbooks</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
     <section id="hero">
         <div class="hero-content">
-            <h1>Welcome to LaunchLayer Finance</h1>
-            <p>Your financial platform for the future</p>
-            <img src="hero-finance.png" alt="Finance Hero Image" class="hero-image">
-            <button class="cta-button">Get Started</button>
+            <div class="hero-text">
+                <h1>Welcome to LaunchLayer Finance</h1>
+                <p>Your financial platform for the future. Expert guidance, innovative strategies, and proven results.</p>
+                <button class="cta-button">Get Started</button>
+                <button class="cta-button secondary">Learn More</button>
+            </div>
+            <div class="hero-image-container">
+                <img src="hero-finance.png" alt="Finance Hero Image" class="hero-image">
+            </div>
         </div>
     </section>
 
@@ -21,8 +47,26 @@
     <section id="about">
         <div class="container">
             <h2>About LaunchLayer Finance</h2>
-            <p>We are dedicated to providing innovative financial solutions that help you achieve your investment goals. Our platform combines cutting-edge technology with expert financial insights to deliver exceptional value to our clients.</p>
-            <p>With years of experience in the financial industry, we understand the challenges investors face and have built our platform to address these needs with precision and care.</p>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>We are dedicated to providing innovative financial solutions that help you achieve your investment goals. Our platform combines cutting-edge technology with expert financial insights to deliver exceptional value to our clients.</p>
+                    <p>With years of experience in the financial industry, we understand the challenges investors face and have built our platform to address these needs with precision and care.</p>
+                    <div class="stats-grid">
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat">
+                            <h3>₹50Cr+</h3>
+                            <p>Assets Managed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>15%</h3>
+                            <p>Average Returns</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -32,18 +76,22 @@
             <h2>Our Expertise</h2>
             <div class="expertise-grid">
                 <div class="expertise-card">
+                    <div class="card-icon">📈</div>
                     <h3>Investment Strategy</h3>
                     <p>Comprehensive investment planning tailored to your financial goals and risk tolerance.</p>
                 </div>
                 <div class="expertise-card">
+                    <div class="card-icon">💼</div>
                     <h3>Portfolio Management</h3>
                     <p>Professional portfolio management services to maximize returns while minimizing risk.</p>
                 </div>
                 <div class="expertise-card">
+                    <div class="card-icon">🎯</div>
                     <h3>Financial Planning</h3>
                     <p>Long-term financial planning to secure your financial future and retirement goals.</p>
                 </div>
                 <div class="expertise-card">
+                    <div class="card-icon">📊</div>
                     <h3>Market Analysis</h3>
                     <p>In-depth market research and analysis to identify the best investment opportunities.</p>
                 </div>
@@ -58,15 +106,19 @@
             <div class="posts-grid">
                 <article class="post-card">
                     <img src="dividend-post.png" alt="Dividend Investment Strategy" class="post-image">
-                    <h3>Maximizing Dividend Returns</h3>
-                    <p>Learn how to build a robust dividend portfolio that generates consistent passive income.</p>
-                    <a href="#" class="read-more">Read More</a>
+                    <div class="post-content">
+                        <h3>Maximizing Dividend Returns</h3>
+                        <p>Learn how to build a robust dividend portfolio that generates consistent passive income.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
                 </article>
                 <article class="post-card">
                     <img src="transmission-post.png" alt="Market Transmission Analysis" class="post-image">
-                    <h3>Understanding Market Transmission</h3>
-                    <p>Explore how market signals transmit across different asset classes and geographic regions.</p>
-                    <a href="#" class="read-more">Read More</a>
+                    <div class="post-content">
+                        <h3>Understanding Market Transmission</h3>
+                        <p>Explore how market signals transmit across different asset classes and geographic regions.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
                 </article>
             </div>
         </div>
@@ -86,6 +138,7 @@
                         <li>Choosing the right funds</li>
                         <li>Optimizing investment amounts</li>
                         <li>Long-term wealth building strategies</li>
+                        <li>Tax optimization techniques</li>
                     </ul>
                     <button class="download-btn">Download Playbook</button>
                 </div>
@@ -99,16 +152,28 @@
             <h2>What Our Clients Say</h2>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
                     <p>"LaunchLayer Finance transformed my investment approach. Their expert guidance helped me achieve a 25% increase in my portfolio value."</p>
-                    <cite>- Sarah Johnson, Entrepreneur</cite>
+                    <div class="testimonial-author">
+                        <strong>Sarah Johnson</strong><br>
+                        <span>Entrepreneur</span>
+                    </div>
                 </div>
                 <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
                     <p>"The SIP strategy recommended by LaunchLayer has been a game-changer. I'm now on track to meet all my financial goals."</p>
-                    <cite>- Michael Chen, Software Engineer</cite>
+                    <div class="testimonial-author">
+                        <strong>Michael Chen</strong><br>
+                        <span>Software Engineer</span>
+                    </div>
                 </div>
                 <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
                     <p>"Professional, reliable, and results-driven. LaunchLayer Finance delivers on their promises with exceptional service."</p>
-                    <cite>- Emma Davis, Marketing Director</cite>
+                    <div class="testimonial-author">
+                        <strong>Emma Davis</strong><br>
+                        <span>Marketing Director</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -117,12 +182,14 @@
     <!-- Newsletter Section -->
     <section id="newsletter">
         <div class="container">
-            <h2>Stay Updated</h2>
-            <p>Subscribe to our newsletter for the latest market insights and investment strategies.</p>
-            <form class="newsletter-form">
-                <input type="email" placeholder="Enter your email address" required>
-                <button type="submit">Subscribe</button>
-            </form>
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for the latest market insights and investment strategies.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -133,14 +200,23 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Contact Information</h3>
-                    <p><strong>Email:</strong> info@launchlayer.finance</p>
-                    <p><strong>Phone:</strong> +1 (555) 123-4567</p>
-                    <p><strong>Address:</strong> 123 Finance Street, Investment City, IC 12345</p>
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <span>info@launchlayer.finance</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <span>123 Finance Street, Investment City, IC 12345</span>
+                    </div>
                 </div>
                 <form class="contact-form">
                     <input type="text" placeholder="Your Name" required>
                     <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <textarea placeholder="Your Message" required rows="5"></textarea>
                     <button type="submit">Send Message</button>
                 </form>
             </div>
@@ -150,8 +226,41 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 LaunchLayer Finance. All rights reserved.</p>
-            <p>Empowering your financial future through intelligent investment strategies.</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LaunchLayer Finance</h3>
+                    <p>Empowering your financial future through intelligent investment strategies.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#expertise">Services</a></li>
+                        <li><a href="#playbooks">Playbooks</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Investment Strategy</a></li>
+                        <li><a href="#">Portfolio Management</a></li>
+                        <li><a href="#">Financial Planning</a></li>
+                        <li><a href="#">Market Analysis</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LaunchLayer Finance. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
