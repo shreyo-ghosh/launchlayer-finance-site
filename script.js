@@ -1,10 +1,5 @@
-// ==========================
-// Basic interactions: mobile nav toggle and newsletter handling
-// ==========================
 document.addEventListener('DOMContentLoaded', function () {
-  // --------------------------
-  // Mobile nav toggle
-  // --------------------------
+  // Hamburger nav toggle
   const navToggle = document.getElementById('nav-toggle');
   const navList = document.getElementById('nav-list');
   if (navToggle && navList) {
@@ -15,37 +10,32 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // --------------------------
-  // Newsletter form submission (placeholder)
-  // --------------------------
+  // FAQ Accordion
+  document.querySelectorAll('.faq-toggle').forEach(toggle => {
+    toggle.addEventListener('click', function () {
+      const answer = this.nextElementSibling;
+      if (answer.style.display === "block") {
+        answer.style.display = "none";
+      } else {
+        document.querySelectorAll('.faq-answer').forEach(a => a.style.display = "none");
+        answer.style.display = "block";
+      }
+    });
+  });
+
+  // Newsletter
   const form = document.getElementById('newsletter');
   if (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      const email = form.querySelector('input[type="email"]')?.value || '';
-      if (!email || !email.includes('@')) {
-        alert('Please enter a valid email.');
+      const name = form.querySelector('input[name="name"]').value.trim();
+      const email = form.querySelector('input[name="email"]').value.trim();
+      if (!email.includes('@') || !name) {
+        alert('Please enter your name and a valid email.');
         return;
       }
-      // Confirmation (replace with backend integration if needed)
       alert('Thanks! You are subscribed — we will email you soon.');
       form.reset();
     });
   }
-
-  // --------------------------
-  // Smooth scroll for anchor links
-  // --------------------------
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      const href = this.getAttribute('href');
-      if (href && href.length > 1) {
-        const target = document.querySelector(href);
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      }
-    });
-  });
 });
