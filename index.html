@@ -1,255 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LaunchLayer Finance</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LaunchLayer Finance — Personal finance made simple</title>
+  <meta name="description" content="LaunchLayer Finance: insurance, investments, and easy-to-follow financial education to grow and protect your wealth." />
+  <link rel="icon" href="Launch-Layer-logo.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <img src="Launch-Layer-logo.jpg" alt="LaunchLayer Finance logo" class="site-logo">
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#expertise">Services</a></li>
-                <li><a href="#playbooks">Playbooks</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img src="Launch-Layer-logo.jpg" alt="LaunchLayer Finance logo" width="48" height="48">
+        <span class="brand-text">LaunchLayer Finance</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <button id="nav-toggle" aria-expanded="false" aria-controls="nav-list">☰</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#insights">Insights</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" role="region" aria-labelledby="hero-heading">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1 id="hero-heading">Build Wealth with Smarter Financial Choices</h1>
+          <p class="lead">LaunchLayer Finance helps you navigate insurance, investments, and money management with clarity and confidence.</p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="#contact">Get Started Today</a>
+            <a class="btn outline" href="#insights">Read Insights</a>
+          </div>
         </div>
-    </nav>
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>Welcome to LaunchLayer Finance</h1>
-                <p>Your financial platform for the future. Expert guidance, innovative strategies, and proven results.</p>
-                <button class="cta-button">Get Started</button>
-                <button class="cta-button secondary">Learn More</button>
-            </div>
-            <div class="hero-image-container">
-                <img src="hero-finance.png" alt="Finance Hero Image" class="hero-image">
-            </div>
+        <div class="hero-image" aria-hidden="true">
+          <img src="hero-finance.png" alt="Illustration of finance and growth" />
         </div>
+      </div>
     </section>
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2>About LaunchLayer Finance</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>We are dedicated to providing innovative financial solutions that help you achieve your investment goals. Our platform combines cutting-edge technology with expert financial insights to deliver exceptional value to our clients.</p>
-                    <p>With years of experience in the financial industry, we understand the challenges investors face and have built our platform to address these needs with precision and care.</p>
-                    <div class="stats-grid">
-                        <div class="stat">
-                            <h3>500+</h3>
-                            <p>Happy Clients</p>
-                        </div>
-                        <div class="stat">
-                            <h3>₹50Cr+</h3>
-                            <p>Assets Managed</p>
-                        </div>
-                        <div class="stat">
-                            <h3>15%</h3>
-                            <p>Average Returns</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+    <!-- Services -->
+    <section id="services" class="section services container" aria-labelledby="services-heading">
+      <h2 id="services-heading">What We Do</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="sip-card.png" alt="Insurance planning" />
+          <h3>Insurance Planning</h3>
+          <p>Secure your family’s future with health, life, and retirement coverage tailored to your needs.</p>
+        </article>
+        <article class="card">
+          <img src="dividend-post.png" alt="Wealth building" />
+          <h3>Wealth Building</h3>
+          <p>Learn proven strategies to grow and manage your investments effectively.</p>
+        </article>
+        <article class="card">
+          <img src="transmission-post.png" alt="Financial education" />
+          <h3>Financial Education</h3>
+          <p>Easy-to-understand guides and insights to make complex finance simple.</p>
+        </article>
+        <article class="card">
+          <h3>Personalized Advice</h3>
+          <p>Customized strategies that align with your goals and risk appetite.</p>
+        </article>
+      </div>
     </section>
-    <!-- Expertise Section -->
-    <section id="expertise">
-        <div class="container">
-            <h2>Our Expertise</h2>
-            <div class="expertise-grid">
-                <div class="expertise-card">
-                    <div class="card-icon">📈</div>
-                    <h3>Investment Strategy</h3>
-                    <p>Comprehensive investment planning tailored to your financial goals and risk tolerance.</p>
-                </div>
-                <div class="expertise-card">
-                    <div class="card-icon">💼</div>
-                    <h3>Portfolio Management</h3>
-                    <p>Professional portfolio management services to maximize returns while minimizing risk.</p>
-                </div>
-                <div class="expertise-card">
-                    <div class="card-icon">🎯</div>
-                    <h3>Financial Planning</h3>
-                    <p>Long-term financial planning to secure your financial future and retirement goals.</p>
-                </div>
-                <div class="expertise-card">
-                    <div class="card-icon">📊</div>
-                    <h3>Market Analysis</h3>
-                    <p>In-depth market research and analysis to identify the best investment opportunities.</p>
-                </div>
-            </div>
-        </div>
+
+    <!-- Insights / Blog teaser -->
+    <section id="insights" class="section container" aria-labelledby="insights-heading">
+      <h2 id="insights-heading">Financial Insights</h2>
+      <div class="post-list">
+        <article class="post">
+          <h3>5 Smart Ways to Cut Unnecessary Expenses</h3>
+          <p class="meta">Quick tips to reduce monthly leaks and boost savings.</p>
+          <a class="read-more" href="#">Read more →</a>
+        </article>
+        <article class="post">
+          <h3>The Beginner’s Guide to Understanding Insurance Plans</h3>
+          <p class="meta">What each policy covers and how to choose the right plan.</p>
+          <a class="read-more" href="#">Read more →</a>
+        </article>
+        <article class="post">
+          <h3>How to Start Investing with Just ₹5,000</h3>
+          <p class="meta">Practical steps to begin investing in SIPs and ETFs.</p>
+          <a class="read-more" href="#">Read more →</a>
+        </article>
+      </div>
     </section>
-    <!-- Featured Posts Section -->
-    <section id="featured-posts">
-        <div class="container">
-            <h2>Featured Posts</h2>
-            <div class="posts-grid">
-                <article class="post-card">
-                    <img src="dividend-post.png" alt="Dividend Investment Strategy" class="post-image">
-                    <div class="post-content">
-                        <h3>Maximizing Dividend Returns</h3>
-                        <p>Learn how to build a robust dividend portfolio that generates consistent passive income.</p>
-                        <a href="#" class="read-more">Read More</a>
-                    </div>
-                </article>
-                <article class="post-card">
-                    <img src="transmission-post.png" alt="Market Transmission Analysis" class="post-image">
-                    <div class="post-content">
-                        <h3>Understanding Market Transmission</h3>
-                        <p>Explore how market signals transmit across different asset classes and geographic regions.</p>
-                        <a href="#" class="read-more">Read More</a>
-                    </div>
-                </article>
-            </div>
-        </div>
+
+    <!-- About -->
+    <section id="about" class="section container" aria-labelledby="about-heading">
+      <h2 id="about-heading">About LaunchLayer Finance</h2>
+      <p>At LaunchLayer Finance, our mission is simple: to empower individuals and families to take control of their financial future. With expertise in insurance, investments, and strategic wealth planning, we provide practical guidance that helps you make informed decisions.</p>
     </section>
-    <!-- Playbooks Section -->
-    <section id="playbooks">
-        <div class="container">
-            <h2>Investment Playbooks</h2>
-            <div class="playbook-card">
-                <img src="sip-card.png" alt="SIP Investment Guide" class="playbook-image">
-                <div class="playbook-content">
-                    <h3>SIP Investment Strategy</h3>
-                    <p>Master the art of Systematic Investment Plans (SIP) with our comprehensive guide. Learn how to build wealth through disciplined, regular investments.</p>
-                    <ul>
-                        <li>Understanding SIP fundamentals</li>
-                        <li>Choosing the right funds</li>
-                        <li>Optimizing investment amounts</li>
-                        <li>Long-term wealth building strategies</li>
-                        <li>Tax optimization techniques</li>
-                    </ul>
-                    <button class="download-btn">Download Playbook</button>
-                </div>
-            </div>
-        </div>
+
+    <!-- Contact / Newsletter -->
+    <section id="contact" class="section container" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Stay Connected</h2>
+      <p>Sign up for our free newsletter and get weekly tips on smart money management, insurance, and investments—straight to your inbox.</p>
+      <form id="newsletter" class="newsletter" action="#" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" />
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required />
+        <button type="submit" class="btn primary">Subscribe</button>
+      </form>
     </section>
-    <!-- Testimonials Section -->
-    <section id="testimonials">
-        <div class="container">
-            <h2>What Our Clients Say</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"LaunchLayer Finance transformed my investment approach. Their expert guidance helped me achieve a 25% increase in my portfolio value."</p>
-                    <div class="testimonial-author">
-                        <strong>Sarah Johnson</strong><br>
-                        <em>Entrepreneur</em>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"The SIP strategy recommended by LaunchLayer has been a game-changer. I'm now on track to meet all my financial goals."</p>
-                    <div class="testimonial-author">
-                        <strong>Michael Chen</strong><br>
-                        <em>Software Engineer</em>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"Professional, reliable, and results-driven. LaunchLayer Finance delivers on their promises with exceptional service."</p>
-                    <div class="testimonial-author">
-                        <strong>Emma Davis</strong><br>
-                        <em>Marketing Director</em>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Newsletter Section -->
-    <section id="newsletter">
-        <div class="container">
-            <div class="newsletter-content">
-                <h2>Stay Updated</h2>
-                <p>Subscribe to our newsletter for the latest market insights and investment strategies.</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email address" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
-        </div>
-    </section>
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <div class="contact-item">
-                        <span class="contact-icon">📧</span>
-                        <span>launchlayer.finance@gmail.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-icon">📞</span>
-                        <span>+91 98310 14716 </span>
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>LaunchLayer Finance</h3>
-                    <p>Empowering your financial future through intelligent investment strategies.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#hero">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#expertise">Services</a></li>
-                        <li><a href="#playbooks">Playbooks</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="#">Investment Strategy</a></li>
-                        <li><a href="#">Portfolio Management</a></li>
-                        <li><a href="#">Financial Planning</a></li>
-                        <li><a href="#">Market Analysis</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#">LinkedIn</a>
-                        <a href="#">Twitter</a>
-                        <a href="#">Facebook</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2025 LaunchLayer Finance. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-    <script src="script.js"></script>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© 2025 LaunchLayer Finance. All Rights Reserved.</div>
+      <div class="footer-links">
+        <a href="#">Home</a> · <a href="#about">About</a> · <a href="#services">Services</a> · <a href="#insights">Blog</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
