@@ -1,50 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LaunchLayer Finance</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travlo - Travel Adventures</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Navbar -->
+  <!-- Header -->
   <header>
-    <nav class="navbar">
-      <div class="logo">
-        <img src="Launch Layer -logo.png" alt="LaunchLayer Finance Logo">
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html#home">Home</a></li>
-        <li><a href="index.html#about">About</a></li>
+    <nav>
+      <a href="#" class="logo">Travlo</a>
+      <!-- Mobile Nav Toggle -->
+      <button id="nav-toggle" aria-expanded="false" aria-controls="nav-list" class="menu-toggle">
+        ☰
+      </button>
+      <ul class="nav-links" id="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section id="home" class="hero">
+  <section class="hero" id="home">
     <div class="hero-content">
-      <h1>LaunchLayer Finance</h1>
-      <p class="slogan">Creating Wealth, Launching Futures</p>
-      <a href="services.html" class="btn">Explore Our Services</a>
+      <h1>Explore the World with Travlo</h1>
+      <p>Your adventure starts here</p>
+      <a href="services.html" class="btn">Discover More</a>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Us</h2>
-    <p>
-      At LaunchLayer Finance, we help individuals and families build financial security through expert guidance
-      in insurance, investments, and wealth management. Our goal is to simplify financial decisions and give
-      you confidence in your future.
-    </p>
+  <section class="about" id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>
+        At Travlo, we specialize in creating unforgettable travel experiences. 
+        Whether you seek cultural immersion, thrilling adventures, or relaxing getaways, 
+        we tailor trips to your dreams.
+      </p>
+    </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>We’d love to hear from you. Reach us anytime via WhatsApp or Email.</p>
-    <div class="contact-options">
-      <a class="btn contact-btn" href="https://wa.me/919831014716" target="_blank">💬 WhatsApp_
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Have questions? Reach out to us anytime.</p>
+      
+      <!-- Newsletter Form -->
+      <form id="newsletter">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit" class="btn">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Travlo. All rights reserved.</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
