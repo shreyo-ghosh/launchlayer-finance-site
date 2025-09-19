@@ -1,70 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Travlo - Travel Adventures</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>LaunchLayer Finance | Creating Wealth, Launching Futures</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Empowering you with smart financial choices in insurance, investment & wealth. Expert advice, client trust, and easy guidance.">
+  <!-- OpenGraph -->
+  <meta property="og:title" content="LaunchLayer Finance">
+  <meta property="og:description" content="Finance made simple: insurance, investing, expert advice.">
+  <meta property="og:image" content="img/logo.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="img/logo.png">
 </head>
 <body>
-  <!-- Header -->
   <header>
-    <nav>
-      <a href="#" class="logo">Travlo</a>
-      <!-- Mobile Nav Toggle -->
-      <button id="nav-toggle" aria-expanded="false" aria-controls="nav-list" class="menu-toggle">
-        ☰
-      </button>
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="index.html">
+        <img src="img/logo.png" alt="LaunchLayer Finance Logo" />
+      </a>
+      <button id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-list">☰</button>
       <ul class="nav-links" id="nav-list">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="services.html">Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#faq">FAQs</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <h1>Explore the World with Travlo</h1>
-      <p>Your adventure starts here</p>
-      <a href="services.html" class="btn">Discover More</a>
+  <section class="hero">
+    <div>
+      <h1>Build Wealth with Smarter Financial Choices</h1>
+      <p class="subheadline">LaunchLayer Finance helps you navigate insurance, investments, and money management with clarity and confidence.</p>
+      <span class="slogan">Creating Wealth, Launching Futures.</span>
+      <a href="services.html" class="btn">Get Started Today</a>
     </div>
   </section>
 
   <!-- About Section -->
-  <section class="about" id="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>
-        At Travlo, we specialize in creating unforgettable travel experiences. 
-        Whether you seek cultural immersion, thrilling adventures, or relaxing getaways, 
-        we tailor trips to your dreams.
-      </p>
+  <section id="about">
+    <h2>About LaunchLayer Finance</h2>
+    <p>At LaunchLayer Finance, our mission is simple: to empower individuals and families to take control of their financial future. With expertise in insurance, investments, and strategic wealth planning, we provide practical guidance that helps you make informed decisions. Whether you’re protecting your loved ones, planning for retirement, or looking to grow your portfolio, we’re here to guide you at every step.</p>
+  </section>
+
+  <!-- Highlights/Benefits -->
+  <section class="highlights">
+    <div class="highlight-card">
+      <span>🔒</span><p>Transparent, no jargon</p>
+    </div>
+    <div class="highlight-card">
+      <span>📈</span><p>Backed by research and real-world strategies</p>
+    </div>
+    <div class="highlight-card">
+      <span>🤝</span><p>Trusted by a growing community</p>
+    </div>
+    <div class="highlight-card">
+      <span>🕰️</span><p>Long-term focus</p>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>Have questions? Reach out to us anytime.</p>
-      
-      <!-- Newsletter Form -->
-      <form id="newsletter">
-        <input type="email" placeholder="Enter your email" required />
-        <button type="submit" class="btn">Subscribe</button>
-      </form>
+  <!-- Services Teaser -->
+  <section class="services-teaser">
+    <h2>What We Do</h2>
+    <div class="services-cards">
+      <div class="service-card"><h3>Insurance Planning</h3><p>Secure your family’s future with health, life, and retirement coverage tailored to your needs.</p></div>
+      <div class="service-card"><h3>Wealth Building</h3><p>Learn proven strategies to grow and manage your investments effectively.</p></div>
+      <div class="service-card"><h3>Financial Education</h3><p>Easy-to-understand guides to make complex finance simple.</p></div>
+      <div class="service-card"><h3>Personalized Advice</h3><p>Customized strategies to align with your goals and risk appetite.</p></div>
+    </div>
+    <a href="services.html" class="btn">Explore Services</a>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-cards">
+      <div class="testimonial"><p>⭐⭐⭐⭐⭐ “LaunchLayer Finance made insurance simple and stress-free!”</p><b>– A. Sharma</b></div>
+      <div class="testimonial"><p>⭐⭐⭐⭐⭐ “Clear advice. My investments have never looked better.”</p><b>– Priya Singh</b></div>
+      <div class="testimonial"><p>⭐⭐⭐⭐⭐ “Responsive, knowledgeable team. Highly recommended.”</p><b>– Rahul M.</b></div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-accordion">
+      <button class="faq-toggle">What types of insurance can I get?</button>
+      <div class="faq-answer">You can access medical, general, motor, and life insurance solutions tailored to your needs.</div>
+      <button class="faq-toggle">How do I start investing with LaunchLayer?</button>
+      <div class="faq-answer">Simply contact us! We’ll analyze your goals and risk appetite, then suggest optimal options.</div>
+      <button class="faq-toggle">Is my information kept confidential?</button>
+      <div class="faq-answer">Yes, your privacy and trust are our top priorities. All consultations are secure.</div>
+    </div>
+  </section>
+
+  <!-- Contact / Newsletter -->
+  <section id="contact">
+    <h2>Stay Connected</h2>
+    <p>Sign up for our free newsletter and get weekly tips on smart money management, insurance, and investments—straight to your inbox.</p>
+    <form id="newsletter">
+      <input type="text" name="name" placeholder="Your Name" aria-label="Name" required>
+      <input type="email" name="email" placeholder="Your Email" aria-label="Email" required>
+      <button type="submit" class="btn">Subscribe</button>
+    </form>
+    <div class="contact-actions">
+      <a href="https://wa.me/919831014716" class="btn whatsapp" aria-label="Contact on WhatsApp" target="_blank">💬 WhatsApp</a>
+      <a href="mailto:launchlayer.finance@gmail.com" class="btn email" aria-label="Email us">📧 Email</a>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Travlo. All rights reserved.</p>
+    <nav>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/company/launchlayer" aria-label="LinkedIn">in</a>
+      <a href="https://www.instagram.com/launchlayer_finance" aria-label="Instagram">▪︎</a>
+      <a href="https://twitter.com/launchlayer_fin" aria-label="Twitter">🐦</a>
+    </div>
+    <p>&copy; 2025 LaunchLayer Finance. All Rights Reserved.</p>
   </footer>
-
-  <!-- Script -->
   <script src="script.js"></script>
 </body>
 </html>
