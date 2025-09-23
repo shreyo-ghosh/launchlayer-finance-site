@@ -18,7 +18,9 @@
       <a href="index.html" class="logo">
         <img src="Launch Layer -logo.png" alt="LaunchLayer Finance Logo">
       </a>
-      <button id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-list">☰</button>
+      <button id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-list">
+        ☰
+      </button>
       <ul class="nav-links" id="nav-list">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html" class="active">Services</a></li>
@@ -28,7 +30,7 @@
       </ul>
     </nav>
   </header>
-  
+
   <!-- Services Hero Section -->
   <section class="services-hero">
     <div class="container">
@@ -39,19 +41,75 @@
       </div>
     </div>
   </section>
-  
-  <!-- Services Section -->
+
+  <!-- Featured Services Section -->
+  <section class="featured-services">
+    <div class="container">
+      <h2>Our Core Services</h2>
+      <div class="services-cards-grid">
+        <!-- Smart Insurance Card -->
+        <div class="service-card featured">
+          <div class="card-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L13.09 8.26L16 7L14.74 10.74L21 10L15 14L21 18L14.74 13.26L16 17L13.09 15.74L12 22L10.91 15.74L8 17L9.26 13.26L3 14L9 10L3 6L9.26 10.74L8 7L10.91 8.26L12 2Z" fill="#4F46E5"/>
+            </svg>
+          </div>
+          <h3>Smart Insurance</h3>
+          <p>AI-powered insurance recommendations tailored to your lifestyle and needs. Get comprehensive coverage with optimal premiums through our smart matching algorithm.</p>
+          <div class="card-features">
+            <span class="feature-tag">✓ Personalized Plans</span>
+            <span class="feature-tag">✓ Best Price Guarantee</span>
+            <span class="feature-tag">✓ Instant Quotes</span>
+          </div>
+          <a href="#contact" class="card-cta">Get Smart Quote</a>
+        </div>
+
+        <!-- Goal-based SIPs Card -->
+        <div class="service-card featured">
+          <div class="card-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 6L18.29 8.29L13.41 13.17L9.41 9.17L2 16.59L3.41 18L9.41 12L13.41 16L19.71 9.71L22 12V6H16Z" fill="#059669"/>
+            </svg>
+          </div>
+          <h3>Goal-based SIPs</h3>
+          <p>Strategic investment planning aligned with your life goals. Whether it's education, marriage, or retirement - we create customized SIP portfolios for success.</p>
+          <div class="card-features">
+            <span class="feature-tag">✓ Goal-Oriented Planning</span>
+            <span class="feature-tag">✓ Diversified Portfolio</span>
+            <span class="feature-tag">✓ Tax Optimization</span>
+          </div>
+          <a href="#contact" class="card-cta">Start SIP Journey</a>
+        </div>
+
+        <!-- Advisor + AI Card -->
+        <div class="service-card featured">
+          <div class="card-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 1L13.5 2.5L16.17 5.17L10.58 10.76C10.22 10.54 9.82 10.4 9.39 10.35L8.1 9.05L3 14.15L4.86 16L8.46 12.4L9.75 13.69C10.82 14.78 11.5 16.24 11.68 17.8H14V16H16V20H14V18.32C13.73 19.78 12.59 21 11.1 21C9.27 21 7.8 19.53 7.8 17.7C7.8 16.96 8.09 16.3 8.55 15.8L4.86 12.11L3 14.15L8.1 9.05L9.39 10.35C10.89 10.75 12.18 11.64 13.07 12.93L15 11V9H21Z" fill="#DC2626"/>
+            </svg>
+          </div>
+          <h3>Advisor + AI</h3>
+          <p>Perfect blend of human expertise and artificial intelligence. Get personalized financial advice backed by data analytics and years of professional experience.</p>
+          <div class="card-features">
+            <span class="feature-tag">✓ Expert Advisors</span>
+            <span class="feature-tag">✓ AI-Powered Insights</span>
+            <span class="feature-tag">✓ 24/7 Support</span>
+          </div>
+          <a href="#contact" class="card-cta">Book Consultation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional Services Section -->
   <section class="services-section">
     <div class="container">
-      <h2>What We Offer</h2>
+      <h2>Complete Financial Solutions</h2>
       <div class="services-grid">
         <div class="service-card">
-          <img src="insurance-card.png" alt="Medical insurance plans covering hospitalization, critical illness, and preventive healthcare" class="service-image">
-          <div class="service-content">
-            <div class="service-icon">🏥</div>
-            <h3>Medical Insurance</h3>
-            <p>Comprehensive health plans: hospitalization, critical illness, preventive care, and more. Balanced coverage and affordability.</p>
-          </div>
+          <div class="service-icon">🏥</div>
+          <h3>Medical Insurance</h3>
+          <p>Comprehensive health plans: hospitalization, critical illness, preventive care, and more. Balanced coverage and affordability.</p>
         </div>
         <div class="service-card">
           <div class="service-icon">🏡</div>
@@ -71,15 +129,81 @@
       </div>
     </div>
   </section>
-  
+
+  <!-- Choose Your Plan Section -->
+  <section class="pricing-section">
+    <div class="container">
+      <h2>Choose Your Plan</h2>
+      <p class="section-description">Select the perfect plan that fits your financial goals and budget</p>
+      <div class="pricing-cards">
+        <!-- Starter Plan Card -->
+        <div class="pricing-card">
+          <div class="plan-header">
+            <div class="plan-icon">🌱</div>
+            <h3>Starter Plan</h3>
+            <p class="plan-subtitle">Perfect for beginners</p>
+          </div>
+          <div class="plan-price">
+            <span class="currency">₹</span>
+            <span class="amount">2,999</span>
+            <span class="period">/month</span>
+          </div>
+          <div class="plan-features">
+            <ul>
+              <li>✓ Basic Insurance Consultation</li>
+              <li>✓ Simple SIP Planning</li>
+              <li>✓ Monthly Financial Review</li>
+              <li>✓ Email Support</li>
+              <li>✓ Basic Risk Assessment</li>
+            </ul>
+          </div>
+          <a href="#contact" class="plan-cta starter">Start Your Journey</a>
+          <p class="plan-note">Best for individuals starting their financial planning</p>
+        </div>
+
+        <!-- Personal Plan Card -->
+        <div class="pricing-card popular">
+          <div class="popular-badge">Most Popular</div>
+          <div class="plan-header">
+            <div class="plan-icon">🚀</div>
+            <h3>Personal Plan</h3>
+            <p class="plan-subtitle">Comprehensive financial planning</p>
+          </div>
+          <div class="plan-price">
+            <span class="currency">₹</span>
+            <span class="amount">4,999</span>
+            <span class="period">/month</span>
+          </div>
+          <div class="plan-features">
+            <ul>
+              <li>✓ Complete Insurance Portfolio</li>
+              <li>✓ Goal-based SIP Strategy</li>
+              <li>✓ AI-Powered Recommendations</li>
+              <li>✓ Dedicated Financial Advisor</li>
+              <li>✓ Weekly Portfolio Review</li>
+              <li>✓ Tax Planning Support</li>
+              <li>✓ Priority WhatsApp Support</li>
+            </ul>
+          </div>
+          <a href="#contact" class="plan-cta personal">Get Started Today</a>
+          <p class="plan-note">Ideal for comprehensive financial planning and growth</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact Section -->
   <section class="contact-section" id="contact">
     <div class="container">
       <h2>Need a Consultation?</h2>
       <p>Ready to take control of your financial future? Get in touch with our experts today.</p>
       <div class="contact-actions">
-        <a href="https://wa.me/919831014716" target="_blank" class="btn whatsapp" aria-label="Contact on WhatsApp">💬 WhatsApp</a>
-        <a href="mailto:contact@launchlayerfinance.com" class="btn email" aria-label="Email us">📧 Email</a>
+        <a href="https://wa.me/919831014716" target="_blank" class="btn whatsapp" aria-label="Contact on WhatsApp">
+          💬 WhatsApp
+        </a>
+        <a href="mailto:contact@launchlayerfinance.com" class="btn email" aria-label="Email us">
+          📧 Email
+        </a>
       </div>
     </div>
   </section>
