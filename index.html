@@ -10,13 +10,13 @@
   <meta property="og:description" content="Finance made simple: insurance, investing, expert advice.">
   <meta property="og:image" content="img/logo.png">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="img/logo.png">
+  <link rel="icon" type="image/png" href="Launch Layer -logo.png">
 </head>
 <body>
   <header>
     <nav class="navbar" aria-label="Main navigation">
       <a class="logo" href="index.html">
-        <img src="img/logo.png" alt="LaunchLayer Finance Logo" />
+        <img src="Launch Layer -logo.png" alt="LaunchLayer Finance Logo" />
       </a>
       <button id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-list">☰</button>
       <ul class="nav-links" id="nav-list">
@@ -28,7 +28,6 @@
       </ul>
     </nav>
   </header>
-
   <!-- Hero Section -->
   <section class="hero">
     <div>
@@ -38,19 +37,20 @@
       <a href="services.html" class="btn">Get Started Today</a>
     </div>
   </section>
-
+ 
  <!-- ABOUT SECTION -->
-<section id="about" class="about-section">
+<section class="about-section" id="about">
   <h2>About LaunchLayer Finance</h2>
   <p>
-    Our mission is simple: empower individuals and families to take control of their financial future.<br>
+    Our mission is simple: empower individuals and families to take control of their financial future.
+
     With expertise in insurance, investments, and strategic wealth planning, we provide practical guidance and actionable advice—helping you make confident decisions at every step.
   </p>
   <div class="why-choose-grid">
-    <div class="why-card"><span>🔒</span><p>Transparent, no jargon</p></div>
-    <div class="why-card"><span>📈</span><p>Backed by real research & strategies</p></div>
-    <div class="why-card"><span>🤝</span><p>Trusted by a growing community</p></div>
-    <div class="why-card"><span>🕰️</span><p>Long-term focus</p></div>
+    <div class="why-card">🔒Transparent, no jargon</div>
+    <div class="why-card">📈Backed by real research & strategies</div>
+    <div class="why-card">🤝Trusted by a growing community</div>
+    <div class="why-card">🕰️Long-term focus</div>
   </div>
 </section>
 
@@ -58,10 +58,22 @@
 <section class="services-section">
   <h2>What We Do</h2>
   <div class="services-grid">
-    <div class="service-card"><span>🛡️</span><h3>Insurance Planning</h3><p>Secure your family’s future—health, life, retirement made simple.</p></div>
-    <div class="service-card"><span>📈</span><h3>Wealth Building</h3><p>Grow your money with proven investment strategies.</p></div>
-    <div class="service-card"><span>📚</span><h3>Financial Education</h3><p>Easy guides to make complex finance simple.</p></div>
-    <div class="service-card"><span>🎯</span><h3>Personalized Advice</h3><p>Custom strategies for your goals and risk appetite.</p></div>
+    <div class="service-card">
+      <h3>🛡️Insurance Planning</h3>
+      <p>Secure your family's future—health, life, retirement made simple.</p>
+    </div>
+    <div class="service-card">
+      <h3>📈Wealth Building</h3>
+      <p>Grow your money with proven investment strategies.</p>
+    </div>
+    <div class="service-card">
+      <h3>📚Financial Education</h3>
+      <p>Easy guides to make complex finance simple.</p>
+    </div>
+    <div class="service-card">
+      <h3>🎯Personalized Advice</h3>
+      <p>Custom strategies for your goals and risk appetite.</p>
+    </div>
   </div>
   <a href="services.html" class="btn">Explore Services</a>
 </section>
@@ -71,16 +83,16 @@
   <h2>What Our Clients Say</h2>
   <div class="testimonial-cards">
     <div class="testimonial">
-      <p>⭐⭐⭐⭐⭐ <br> “LaunchLayer Finance made insurance simple and stress-free!”</p>
-      <b>– A. Sharma</b>
+      <p>⭐⭐⭐⭐⭐ <br> "LaunchLayer Finance made insurance simple and stress-free!"</p>
+      <cite>– A. Sharma</cite>
     </div>
     <div class="testimonial">
-      <p>⭐⭐⭐⭐⭐ <br> “Clear advice. My investments have never looked better.”</p>
-      <b>– Priya Singh</b>
+      <p>⭐⭐⭐⭐⭐ <br> "Clear advice. My investments have never looked better."</p>
+      <cite>– Priya Singh</cite>
     </div>
     <div class="testimonial">
-      <p>⭐⭐⭐⭐⭐ <br> “Responsive, knowledgeable team. Highly recommended.”</p>
-      <b>– Rahul M.</b>
+      <p>⭐⭐⭐⭐⭐ <br> "Responsive, knowledgeable team. Highly recommended."</p>
+      <cite>– Rahul M.</cite>
     </div>
   </div>
 </section>
@@ -92,7 +104,7 @@
     <button class="faq-toggle">What types of insurance can I get?</button>
     <div class="faq-answer">Access medical, general, motor, and life insurance solutions tailored to your needs.</div>
     <button class="faq-toggle">How do I start investing with LaunchLayer?</button>
-    <div class="faq-answer">Contact us! We’ll analyze your goals and risk appetite, then suggest optimal options.</div>
+    <div class="faq-answer">Contact us! We'll analyze your goals and risk appetite, then suggest optimal options.</div>
     <button class="faq-toggle">Is my information kept confidential?</button>
     <div class="faq-answer">Yes, your privacy and trust are our top priorities. All consultations are secure.</div>
   </div>
@@ -103,12 +115,16 @@
   <h2>Stay Connected</h2>
   <p>Sign up for our free newsletter and get weekly tips on smart money management, insurance, and investments—straight to your inbox.</p>
   <form id="newsletter">
-    <input type="text" name="name" placeholder="Your Name" aria-label="Name" required>
-    <input type="email" name="email" placeholder="Your Email" aria-label="Email" required>
+    <input type="text" name="name" placeholder="Your Name" required aria-label="Name">
+    <input type="email" name="email" placeholder="Your Email" required aria-label="Email">
     <button type="submit" class="btn">Subscribe</button>
   </form>
   <div class="contact-actions">
-    <a href="https://wa.me/919831014716" class="btn whatsapp" aria-label="Contact on WhatsApp" target="_blank">💬 WhatsApp</a>
+    <a href="https://wa.me/919831014716" target="_blank" class="btn whatsapp" aria-label="Contact on WhatsApp">💬 WhatsApp</a>
     <a href="mailto:launchlayer.finance@gmail.com" class="btn email" aria-label="Email us">📧 Email</a>
   </div>
 </section>
+
+<script src="script.js"></script>
+</body>
+</html>
