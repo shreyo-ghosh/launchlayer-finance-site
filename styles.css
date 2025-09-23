@@ -10,7 +10,6 @@ body {
   background: #0d1b2a;
   color: #e0e1dd;
 }
-
 /* NAVBAR */
 header {
   background: #1b263b;
@@ -29,7 +28,6 @@ header {
 .logo img {
   height: 60px;
 }
-
 .nav-links {
   list-style: none;
   display: flex;
@@ -49,7 +47,6 @@ header {
   color: #fca311;
   border-bottom: 2px solid #fca311;
 }
-
 #nav-toggle {
   display: none;
   background: none;
@@ -77,7 +74,6 @@ header {
     display: block;
   }
 }
-
 /* HERO SECTION */
 .hero, .services-hero {
   display: flex;
@@ -101,7 +97,6 @@ header {
   color: #fca311;
   font-weight: 500;
 }
-
 /* BUTTONS */
 .btn {
   display: inline-block;
@@ -125,7 +120,6 @@ header {
   outline: 2px solid #fca311;
   outline-offset: 2px;
 }
-
 /* MAIN SECTIONS */
 .about-section, .services-section, #testimonials, #faq, #contact {
   max-width: 800px;
@@ -141,7 +135,6 @@ header {
   font-size: 2rem;
   letter-spacing: 0.5px;
 }
-
 /* WHY CHOOSE GRID */
 .why-choose-grid {
   display: grid;
@@ -164,7 +157,6 @@ header {
 .why-card span {
   font-size: 1.8rem;
 }
-
 /* SERVICES CARDS */
 .services-grid, .services-list {
   display: flex;
@@ -189,7 +181,6 @@ header {
   font-size: 1.95rem;
   margin-bottom: 0.45rem;
 }
-
 /* TESTIMONIALS */
 .testimonial-cards {
   display: flex;
@@ -215,7 +206,6 @@ header {
   color: #fca311;
   font-weight: 700;
 }
-
 /* FAQ ACCORDION */
 .faq-accordion {
   max-width: 600px;
@@ -246,7 +236,6 @@ header {
   margin-bottom: 1rem;
   transition: all 0.22s;
 }
-
 /* CONTACT FORM */
 #contact form {
   display: flex;
@@ -269,7 +258,6 @@ input[type="text"], input[type="email"] {
 input[type="text"]::placeholder, input[type="email"]::placeholder {
   color: #a6a8b3;
 }
-
 /* CONTACT ACTION BUTTONS */
 .contact-actions {
   display: flex;
@@ -277,10 +265,10 @@ input[type="text"]::placeholder, input[type="email"]::placeholder {
   gap: 1.2rem;
   margin-top: 0.6rem;
 }
-
 /* FOOTER */
 footer {
   background: #1b263b;
   color: #e0e1dd;
   text-align: center;
-  padding: 22px 10px 8px
+  padding: 22px 10px 8px;
+}
