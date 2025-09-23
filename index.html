@@ -1,135 +1,115 @@
 <!DOCTYPE html>
-  <meta charset="utf-8"/>
-  LaunchLayer Finance – Smarter Money, Confident Futures
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <meta content="Modern finance SaaS-style experience for insurance, investments, SIPs, and wealth building. Actionable insights, clean UI, and conversion-focused flows." name="description"/>
-  <meta content="LaunchLayer Finance" property="og:title"/>
-  <meta content="Smarter insurance and investing with a sleek, professional experience." property="og:description"/>
-  <meta content="hero-finance.png" property="og:image"/>
-  <link href="Launch Layer -logo.png" rel="icon" type="image/png"/>
-  <link href="styles.css" rel="stylesheet"/>
-  <br>    :root{--bg:#0b1020;--bg-2:#0f162e;--card:#111a36;--muted:#7e8bb6;--text:#eaf0ff;--brand:#4da3ff;--brand-2:#7ce6d7;--warning:#ffb545;--success:#39d98a;--radius:14px;--shadow:0 10px 30px rgba(0,0,0,.35)}<br>    *{box-sizing:border-box}<br>    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif}<br>    a{color:inherit;text-decoration:none}<br>    img{max-width:100%;height:auto;display:block}<br>    .container{max-width:1180px;margin:auto;padding:0 20px}<br>    .nav{position:sticky;top:0;z-index:50;background:linear-gradient(180deg,#0b1020 0%, rgba(11,16,32,.7) 100%);backdrop-filter: blur(8px);border-bottom:1px solid rgba(255,255,255,.06)}<br>    .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}<br>    .brand{display:flex;gap:12px;align-items:center}<br>    .brand img{width:36px;height:36px;border-radius:8px}<br>    .brand strong{font-weight:700;letter-spacing:.2px}<br>    .nav-links{display:flex;gap:20px;align-items:center}<br>    .nav-links a{color:var(--muted)}<br>    .nav-links a:hover{color:var(--text)}<br>    .cta{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#081225;border:0;padding:10px 16px;border-radius:10px;font-weight:700;box-shadow: var(--shadow)}<br>    .hero{position:relative;background:radial-gradient(1200px 500px at 20% -10%, rgba(77,163,255,.25), transparent 40%), radial-gradient(900px 400px at 90% 10%, rgba(124,230,215,.18), transparent 45%) , linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%)}<br>    .hero .container{display:grid;grid-template-columns: 1.05fr .95fr;gap:32px;align-items:center;padding:64px 20px}<br>    .eyebrow{color:var(--brand-2);font-weight:700;letter-spacing:.14em;text-transform:uppercase}<br>    .h1{font-size: clamp(32px, 6vw, 56px);line-height:1.05;margin:10px 0 14px}<br>    .sub{color:var(--muted);font-size: clamp(14px, 2.2vw, 18px)}<br>    .hero-cta{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}<br>    .secondary{border:1px solid rgba(255,255,255,.14);padding:10px 16px;border-radius:10px}<br>    .dash-card{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:14px;box-shadow: var(--shadow)}<br>    .kpi{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}<br>    .kpi .cell{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-radius:10px;padding:10px;text-align:center}<br>    .partners{padding:26px 0;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);background:linear-gradient(180deg, rgba(255,255,255,.02), transparent)}<br>    .logo-row{display:grid;grid-template-columns:repeat(6,1fr);gap:18px;opacity:.85}<br>    .logo{background:rgba(255,255,255,.03);border:1px dashed rgba(255,255,255,.08);border-radius:12px;padding:10px;display:flex;align-items:center;justify-content:center;height:52px}<br>    .section{padding:64px 0}<br>    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}<br>    .card{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:20px;box-shadow: var(--shadow)}<br>    .icon{width:42px;height:42px;border-radius:10px;display:inline-grid;place-items:center;margin-bottom:10px;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#081225;font-weight:900}<br>    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}<br>    .step{padding:18px;border-radius:16px;background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));border:1px solid rgba(255,255,255,.08)}<br>    .step .n{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--brand);color:#081225;font-weight:800;margin-bottom:8px}<br>    .carousel{display:grid;grid-template-columns: 48px 1fr 48px;align-items:center;gap:12px}<br>    .slides{overflow:hidden}<br>    .track{display:flex;gap:16px;transition:transform .5s ease}<br>    .t{min-width: calc(50% - 8px);background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:18px}<br>    .nav-btn{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);display:grid;place-items:center;border:1px solid rgba(255,255,255,.12)}<br>    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}<br>    .price{border:1px solid rgba(255,255,255,.12);border-radius:18px;background:linear-gradient(180deg, #0f1836, #0d1430);padding:22px;box-shadow: var(--shadow)}<br>    .price .tag{display:inline-block;border:1px solid rgba(124,230,215,.6);color:var(--brand-2);padding:4px 10px;border-radius:999px;font-size:12px;margin-bottom:10px}<br>    .price h3{margin:8px 0}<br>    .price .amt{font-size:34px;font-weight:800}<br>    .blog{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}<br>    footer{background:#0a0f1f;border-top:1px solid rgba(255,255,255,.08);padding:34px 0;margin-top:40px}<br>    .fcols{display:grid;grid-template-columns: 1.3fr 1fr 1fr 1fr;gap:20px}<br>    .muted{color:var(--muted)}<br>    form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}<br>    input,textarea{width:100%;padding:12px 12px;border-radius:10px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:var(--text)}<br>    input:focus,textarea:focus{outline:none;box-shadow:0 0 0 3px rgba(77,163,255,.25)}<br>    @media (max-width: 980px){.hero .container{grid-template-columns:1fr}.logo-row{grid-template-columns:repeat(3,1fr)}.grid-3,.pricing,.blog{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.t{min-width:100%}}<br>    @media (max-width: 640px){.grid-3,.pricing,.blog{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.nav-links{display:none};form .row{grid-template-columns:1fr}}<br>    <header class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="/">
-        <img alt="LaunchLayer logo"/>
-        LaunchLayer Finance
-      </a>
-      <nav aria-label="Primary" class="nav-links">
-        <a href="#features">Features</a>
-        <a href="services.html">Products</a>
-        <a href="#how">How it works</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#blog">Resources</a>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LaunchLayer Finance – Smarter Money, Confident Futures</title>
+  <meta name="description" content="Modern finance SaaS-style experience for insurance, investments, SIPs, and wealth building.">
+  <link rel="icon" type="image/png" href="Launch-Layer-logo.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/react-router-dom@6/dist/umd/react-router-dom.development.js"></script>
+</head>
+<body>
+  <div id="root">
+    <header>
+      <nav>
+        <div class="brand">
+          <img src="Launch-Layer-logo.jpg" alt="LaunchLayer logo" width="36" height="36">
+          <strong>LaunchLayer Finance</strong>
+        </div>
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="services.html">Products</a>
+          <a href="#how">How it works</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#blog">Resources</a>
+        </div>
+        <a href="#demo" class="cta">Get Demo</a>
       </nav>
-      <a class="cta" href="#demo">Get Demo</a>
-    </div>
-  </header>
-  <section class="hero">
-    <div class="container">
-      <div>
-        <div class="eyebrow">Finance SaaS for everyone</div>
-        <h1 class="h1">Bold, confident wealth building—without the jargon.</h1>
-        <p class="sub">Plan insurance, optimize SIPs, and invest with clarity. Automated insights meet human expertise to grow your money responsibly.</p>
-        <div class="hero-cta">
-          <a class="cta" href="#demo">Start free</a>
-          <a class="secondary" href="services.html">See products</a>
-        </div>
-        <div aria-label="Key performance highlights" class="kpi">
-          <div class="cell">35k+<br><span class="muted">Advisory sessions</span></div>
-          <div class="cell">98%<br><span class="muted">Client satisfaction</span></div>
-          <div class="cell">4.9/5<br><span class="muted">Avg. rating</span></div>
-        </div>
-      </div>
-      <div aria-label="Product dashboard preview">
-        <div class="dash-card">
-          <img alt="Analytics cards and charts"/>
-          <div class="kpi" style="margin-top:10px">
-            <div class="cell">SIP ▲ 12.4%</div>
-            <div class="cell">Risk ✓ Balanced</div>
-            <div class="cell">Goals 3/4</div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div>
+            <div class="eyebrow">Finance SaaS for everyone</div>
+            <h1>Bold, confident wealth building—without the jargon.</h1>
+            <p class="sub">Plan insurance, optimize SIPs, and invest with clarity. Automated insights meet human expertise to grow your money responsibly.</p>
+            <div class="hero-cta">
+              <a href="#demo" class="cta">Start free</a>
+              <a href="services.html" class="secondary">See products</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <img src="hero-finance.png" alt="Finance dashboard preview">
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section aria-label="Trusted by partners" class="partners">
-    <div class="container logo-row">
-      <div class="logo"><img alt="Partner 1" onerror="this.src='insurance-card.png'"/></div>
-      <div class="logo"><img alt="Partner 2" onerror="this.src='sip-card.png'"/></div>
-      <div class="logo"><img alt="Partner 3" onerror="this.src='dividend-post.png'"/></div>
-      <div class="logo"><img alt="Partner 4" onerror="this.src='transmission-post.png'"/></div>
-      <div class="logo"><img alt="Partner 5" onerror="this.src='newsletter-asset.png'"/></div>
-      <div class="logo"><img alt="Partner 6" onerror="this.src='7ea1680a-9c60-4474-8f59-7a3e90210b61.png'"/></div>
-    </div>
-  </section>
-  <section class="section" id="features">
-    <div class="container">
-      <div class="grid-3">
-        <div class="card">
-          <div class="icon">🛡️</div>
-          Smart Insurance
-          <p class="muted">Personalized coverage across health, motor, and life with transparent comparisons.</p>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <div class="grid-3">
+            <div class="card">
+              <div class="icon">🛡️</div>
+              <h3>Smart Insurance</h3>
+              <p class="muted">Personalized coverage across health, motor, and life with transparent comparisons.</p>
+            </div>
+            <div class="card">
+              <div class="icon">📈</div>
+              <h3>Goal-based SIPs</h3>
+              <p class="muted">Automated allocations and rebalancing to keep your goals on track.</p>
+            </div>
+            <div class="card">
+              <div class="icon">🤝</div>
+              <h3>Advisor + AI</h3>
+              <p class="muted">Human expertise augmented by data-driven insights for better outcomes.</p>
+            </div>
+          </div>
         </div>
-        <div class="card">
-          <div class="icon">📈</div>
-          Goal-based SIPs
-          <p class="muted">Automated allocations and rebalancing to keep your goals on track.</p>
+      </section>
+
+      <section id="pricing" class="section">
+        <div class="container">
+          <h2>Choose Your Plan</h2>
+          <div class="pricing">
+            <div class="price">
+              <span class="tag">Starter</span>
+              <h3>Personal</h3>
+              <div class="amt">₹0</div>
+              <p class="muted">Plan overview, basic SIP tracker, newsletter</p>
+              <a href="#demo" class="cta">Get started</a>
+            </div>
+            <div class="price">
+              <span class="tag">Popular</span>
+              <h3>Growth</h3>
+              <div class="amt">₹499/mo</div>
+              <p class="muted">Goal engine, insurance compare, export, nudges</p>
+              <a href="#demo" class="cta">Start trial</a>
+            </div>
+            <div class="price">
+              <span class="tag">Pro</span>
+              <h3>Business</h3>
+              <div class="amt">Custom</div>
+              <p class="muted">Advisory, white-label, dedicated relationship</p>
+              <a href="#demo" class="cta">Contact sales</a>
+            </div>
+          </div>
         </div>
-        <div class="card">
-          <div class="icon">🤝</div>
-          Advisor + AI
-          <p class="muted">Human expertise augmented by data-driven insights for better outcomes.</p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div>
+          <strong>LaunchLayer Finance</strong>
+          <p class="muted">Smarter money decisions for everyone.</p>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="section" id="how" style="background:linear-gradient(180deg, rgba(255,255,255,.02), transparent)">
-    <div class="container steps">
-      <div class="step"><div class="n">1</div>Tell us your goals<br><span class="muted">Income, timeline, and risk comfort</span></div>
-      <div class="step"><div class="n">2</div>We plan<br><span class="muted">Insurance, SIPs, and asset mix</span></div>
-      <div class="step"><div class="n">3</div>Track &amp; adapt<br><span class="muted">Automated nudges and insights</span></div>
-      <div class="step"><div class="n">4</div>Win long-term<br><span class="muted">Stay diversified, stay disciplined</span></div>
-    </div>
-  </section>
-  <section class="section" id="testimonials">
-    <div class="container carousel">
-      <button aria-label="Previous" class="nav-btn" data-dir="-1">‹</button>
-      <div class="slides"><div class="track" id="t-track">
-        <div class="t">“The cleanest finance product I’ve used. I finally understand my money.” — Priya</div>
-        <div class="t">“Insurance choices made simple and fair. Superb support.” — Arjun</div>
-        <div class="t">“My SIPs have structure now. The dashboard is addictive.” — Meera</div>
-      </div></div>
-      <button aria-label="Next" class="nav-btn" data-dir="1">›</button>
-    </div>
-  </section>
-  <section class="section" id="pricing">
-    <div class="container pricing">
-      <div class="price">
-        <span class="tag">Starter</span>
-        Personal
-        <div class="amt">₹0</div>
-        <p class="muted">Plan overview, basic SIP tracker, newsletter</p>
-        <a class="cta" href="#demo">Get started</a>
-      </div>
-      <div class="price" style="outline:2px solid rgba(124,230,215,.25)">
-        <span class="tag">Popular</span>
-        Growth
-        <div class="amt">₹499/mo</div>
-        <p class="muted">Goal engine, insurance compare, export, nudges</p>
-        <a class="cta" href="#demo">Start trial</a>
-      </div>
-      <div class="price">
-        <span class="tag">Pro</span>
-        Business
-        <div class="amt">Custom</div>
-        <p class="muted">Advisory, white-label, dedicated relationship</p>
-        <a class="cta" href="#demo">Contact sales</a>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <div class="container fcols">
-      <div>
-        <strong>LaunchLayer Finance</strong>
-        <p class="muted">Smarter money decisions for everyone.</p>
-      </div
+    </footer>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
